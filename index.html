@@ -1,572 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sohil Sarode - Software Engineer specializing in microservices and full-stack development">
-    <title>Sohil Sarode - Software Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohil Sarode · Software Engineer</title>
+  <meta name="description" content="Sohil Sarode, Software Engineer building distributed backend systems and full-stack products.">
+  <link rel="icon" href="assets/profile.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">SS</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a href="#top" class="mark" aria-label="Back to top">SS<span>.</span></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#experience">Work</a>
+      <a href="#skills">Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Background</a>
+      <a href="#contact">Contact</a>
     </nav>
-<body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="logo">SS</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#awards">Awards</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>
-                    Hi, I'm <span class="gradient-text">Sohil Sarode</span>
-                </h1>
-                <p>Software Engineer specializing in building high-performance microservices and scalable full-stack applications</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View Projects</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <img src="profile2.jpg" alt="Sohil Sarode" class="profile-img" onerror="this.style.display='none'">
-                </div>
-            </div>
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="hero-meta mono reveal">Software Engineer, Bengaluru<br>Backend systems · Full-stack products</p>
+
+        <h1 class="hero-title reveal" data-delay="1">Sohil<br><em>Sarode</em><span class="dot">.</span></h1>
+
+        <div class="hero-body">
+          <p class="lede reveal" data-delay="2">
+            I build high-throughput backend services and the interfaces that sit on top of them.
+            Currently at Lowe's India, building event-driven microservices and Kafka pipelines on Spring Boot, MongoDB and PostgreSQL.
+          </p>
+          <figure class="portrait reveal" data-delay="3">
+            <img src="assets/profile.png" alt="Portrait of Sohil Sarode" width="1024" height="1024">
+            <figcaption class="mono">Fig. 01 — Sohil, Bengaluru</figcaption>
+          </figure>
         </div>
+
+        <ul class="stats" id="stats"></ul>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Work Experience</h2>
-        <div class="experience-grid">
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">Software Engineer</h3>
-                        <p class="company">Lowe's India · Bengaluru</p>
-                    </div>
-                    <span class="duration">Dec 2024 - Present</span>
-                </div>
-                <ul>
-                    <li>Developed and optimized microservices using Spring Boot WebFlux, Kafka, and Cassandra in a distributed architecture for high-throughput and real-time data processing</li>
-                    <li>Built data pipelines using Kafka and Cassandra, ensuring high-speed data retrieval and efficient large-dataset handling</li>
-                    <li>Implemented monitoring solutions with Grafana and Prometheus for real-time performance metrics and troubleshooting</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">Digital Specialist Engineer</h3>
-                        <p class="company">Infosys · Pune</p>
-                    </div>
-                    <span class="duration">Jul 2022 - Nov 2024</span>
-                </div>
-                <ul>
-                    <li>Enhanced service performance, reducing response time by 40% using query optimization and JMeter validation</li>
-                    <li>Integrated Redux for efficient state management and React Query to boost data retrieval performance by 30%</li>
-                    <li>Improved frontend responsiveness, leading to a better user experience across applications</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="experience-title">Intern</h3>
-                        <p class="company">Persistent Systems · Pune</p>
-                    </div>
-                    <span class="duration">Feb 2022 - Jul 2022</span>
-                </div>
-                <ul>
-                    <li>Developed cart and wishlist features with React, improving user interaction</li>
-                    <li>Built backend services using Spring Boot and MongoDB, ensuring scalability and robustness for retail customer operations</li>
-                </ul>
-            </div>
-        </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">01 — Experience</span>
+          <h2>Where I've <em>worked</em></h2>
+        </header>
+        <div id="experience-list"></div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <i class="devicon-python-plain colored"></i>
-                        Python
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-java-plain colored"></i>
-                        Java
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-javascript-plain colored"></i>
-                        JavaScript
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-typescript-plain colored"></i>
-                        TypeScript
-                    </span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Frameworks</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <i class="devicon-spring-plain colored"></i>
-                        Spring Boot
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-react-original colored"></i>
-                        React
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-redux-original colored"></i>
-                        Redux
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-apachekafka-original colored"></i>
-                        Kafka
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-hibernate-plain colored"></i>
-                        Hibernate
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-spring-plain colored"></i>
-                        Spring Cloud
-                    </span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Technologies</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <i class="devicon-redis-plain colored"></i>
-                        Redis
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-graphql-plain colored"></i>
-                        GraphQL
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-docker-plain colored"></i>
-                        Docker
-                    </span>
-                    <span class="skill-tag">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                        </svg>
-                        JWT
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-swagger-plain colored"></i>
-                        Swagger
-                    </span>
-                    <span class="skill-tag">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                        </svg>
-                        WebSockets
-                    </span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <i class="devicon-mysql-plain colored"></i>
-                        MySQL
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-mongodb-plain colored"></i>
-                        MongoDB
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-cassandra-plain colored"></i>
-                        Cassandra
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-microsoftsqlserver-plain colored"></i>
-                        MS SQL Server
-                    </span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Tools</h3>
-                <div class="skill-tags">
-                    <span class="skill-tag">
-                        <i class="devicon-git-plain colored"></i>
-                        Git
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-jira-plain colored"></i>
-                        JIRA
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-grafana-plain colored"></i>
-                        Grafana
-                    </span>
-                    <span class="skill-tag">
-                        <i class="devicon-prometheus-original colored"></i>
-                        Prometheus
-                    </span>
-                    <span class="skill-tag">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-                        </svg>
-                        Rancher
-                    </span>
-                    <span class="skill-tag">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                            <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
-                        </svg>
-                        Instana
-                    </span>
-                </div>
-            </div>
-        </div>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">02 — Stack</span>
+          <h2>Tools I reach <em>for</em></h2>
+        </header>
+        <div id="skills-list"></div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">AmazeKart</h3>
-                    <p class="project-description">
-                        Full-stack e-commerce platform with secure authentication, payment integration, and optimized data management. Features JWT-based security, Razorpay integration, and comprehensive API documentation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Spring Boot</span>
-                        <span class="tech-badge">Redux</span>
-                        <span class="tech-badge">MySQL</span>
-                        <span class="tech-badge">JWT</span>
-                        <span class="tech-badge">Tailwind</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SKS59" target="_blank">GitHub →</a>
-                        <a href="#" target="_blank">Live Demo →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Sketchful</h3>
-                    <p class="project-description">
-                        Real-time collaborative word-guessing game with interactive drawing and chat features. Built with WebSockets for seamless multiplayer engagement and dynamic gameplay.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Spring Boot</span>
-                        <span class="tech-badge">WebSockets</span>
-                        <span class="tech-badge">Bootstrap</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SKS59" target="_blank">GitHub →</a>
-                        <a href="#" target="_blank">Live Demo →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Parking System With ANPR</h3>
-                    <p class="project-description">
-                        Developed an app in Flutter where the admin will have privileges to allow or deny a particular vehicle. Developed a Python code for detecting numbers from a number plate.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Flutter</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">ANPR</span>
-                        <span class="tech-badge">Computer Vision</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SKS59" target="_blank">GitHub →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">Tuition Management System</h3>
-                    <p class="project-description">
-                        Developed a site for admin where he or she will manage the data of their branches, teachers, students of tuition class using HTML, CSS, JavaScript as frontend and PHP, MySQL as backend.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">CSS</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">PHP</span>
-                        <span class="tech-badge">MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SKS59" target="_blank">GitHub →</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="project-title">CoronaPedia</h3>
-                    <p class="project-description">
-                        Developed a code in C++ for data visualization of corona cases (active, deaths, recovered) of all countries and all states of India including covid centres. Also developed Python code for bar and chart diagrams and graphs.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">C++</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Data Visualization</span>
-                        <span class="tech-badge">Matplotlib</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SKS59" target="_blank">GitHub →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">03 — Projects</span>
+          <h2>Things I've <em>built</em></h2>
+        </header>
+        <div id="projects-list"></div>
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="education-grid">
-            <div class="education-card">
-                <div class="education-header">
-                    <div>
-                        <h3 class="education-title">Bachelor of Engineering - Computer Engineering</h3>
-                        <p class="institution">K.K. Wagh Institute of Engineering Education & Research</p>
-                        <p class="education-location">Pune University</p>
-                    </div>
-                    <span class="duration">2018 - 2022</span>
-                </div>
-                <p class="grade">CGPA: 9.74/10</p>
-            </div>
-
-            <div class="education-card">
-                <div class="education-header">
-                    <div>
-                        <h3 class="education-title">Higher Secondary - Science</h3>
-                        <p class="institution">KCES's Moolijee Jaitha College</p>
-                        <p class="education-location">Jalgaon</p>
-                    </div>
-                    <span class="duration">2016 - 2018</span>
-                </div>
-                <p class="grade">Percentage: 88.77%</p>
-            </div>
-
-            <div class="education-card">
-                <div class="education-header">
-                    <div>
-                        <h3 class="education-title">10th Boards</h3>
-                        <p class="institution">A. T. Zambare High School</p>
-                        <p class="education-location">Jalgaon</p>
-                    </div>
-                    <span class="duration">2010 - 2016</span>
-                </div>
-                <p class="grade">Percentage: 95.20%</p>
-            </div>
-        </div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">04 — Education</span>
+          <h2>Academic <em>record</em></h2>
+        </header>
+        <div class="cards" id="education-list"></div>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2 class="section-title">Licenses & Certifications</h2>
-        <div class="certifications-grid">
-            <div class="cert-card">
-                <h3 class="cert-title">SQL and Relational Databases</h3>
-                <p class="cert-issuer">Cognitive Class</p>
-                <p class="cert-date">Issued Jun 2021</p>
-                <p class="cert-id">Credential ID: e0101186622f4eb78c7f a6c898142eb7</p>
-            </div>
-            <div class="cert-card">
-                <h3 class="cert-title">SQL (Basic)</h3>
-                <p class="cert-issuer">HackerRank</p>
-                <p class="cert-date">Issued May 2021</p>
-                <p class="cert-id">Credential ID: 3AF638046584</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Python (Basic)</h3>
-                <p class="cert-issuer">HackerRank</p>
-                <p class="cert-date">Issued Aug 2020</p>
-                <p class="cert-id">Credential ID: A32B37CFF3E4</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Python 3 Programming (Specialization)</h3>
-                <p class="cert-issuer">Coursera</p>
-                <p class="cert-date">Issued Aug 2020</p>
-                <p class="cert-id">Credential ID: RDULDRW3KYSF</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Python Project: pillow tesseract opencv</h3>
-                <p class="cert-issuer">Coursera</p>
-                <p class="cert-date">Issued Aug 2020</p>
-                <p class="cert-id">Credential ID: VWQ9U3LWA6HX</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Programming for Everybody (Getting Started with Python)</h3>
-                <p class="cert-issuer">Coursera</p>
-                <p class="cert-date">Issued Jul 2020</p>
-                <p class="cert-id">Credential ID: J2X8DPNY6FNK</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Data Collection and Processing with Python</h3>
-                <p class="cert-issuer">Coursera</p>
-                <p class="cert-date">Issued Aug 2020</p>
-                <p class="cert-id">Credential ID: TUDHJ5HE2BLE</p>
-            </div>
-
-            <div class="cert-card">
-                <h3 class="cert-title">Problem Solving (Basic)</h3>
-                <p class="cert-issuer">HackerRank</p>
-                <p class="cert-date">Issued Jan 2021</p>
-                <p class="cert-id">Credential ID: D82EBE5CE72C</p>
-            </div>
-        </div>
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">05 — Certifications</span>
+          <h2>Licenses &amp; <em>credentials</em></h2>
+        </header>
+        <div class="cert-list" id="certs-list"></div>
+      </div>
     </section>
 
-    <!-- Honors & Awards Section -->
-    <section id="awards">
-        <h2 class="section-title">Honors & Awards</h2>
-        <div class="awards-grid">
-            <div class="award-card">
-                <div class="award-icon">🏆</div>
-                <h3 class="award-title">Insta Award</h3>
-                <p class="award-issuer">Issued by Infosys · Sep 2023</p>
-                <p class="award-description">Received an award for best performance in project.</p>
-            </div>
-
-            <div class="award-card">
-                <div class="award-icon">🎓</div>
-                <h3 class="award-title">9th Rank in University Merit List</h3>
-                <p class="award-issuer">Issued by SPPU · Jan 2022</p>
-                <p class="award-description">9th Rank in Savitribai Phule Pune University Merit list</p>
-            </div>
-
-            <div class="award-card">
-                <div class="award-icon">📝</div>
-                <h3 class="award-title">MAH-MBA CET</h3>
-                <p class="award-issuer">Score: 98% · Sep 2022</p>
-                <p class="award-description">Secured 98th percentile in MAH-MBA CET examination</p>
-            </div>
-
-            <div class="award-card">
-                <div class="award-icon">⭐</div>
-                <h3 class="award-title">National Talent Search Examination (NTSE)</h3>
-                <p class="award-issuer">Mar 2016</p>
-                <p class="award-description">State level scholar</p>
-            </div>
-
-            <div class="award-card">
-                <div class="award-icon">💻</div>
-                <h3 class="award-title">LeetCode Problem Solver</h3>
-                <p class="award-issuer">200+ Problems Solved</p>
-                <p class="award-description">Solved over 200 problems on LeetCode, earning multiple badges</p>
-            </div>
-        </div>
+    <!-- AWARDS -->
+    <section class="section" id="awards">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">06 — Achievements</span>
+          <h2>Honors &amp; <em>scores</em></h2>
+        </header>
+        <div class="award-list" id="awards-list"></div>
+      </div>
     </section>
 
-    <!-- Languages Section -->
-    <section id="languages">
-        <h2 class="section-title">Languages</h2>
-        <div class="languages-grid">
-            <div class="language-card">
-                <h3 class="language-name">English</h3>
-                <p class="language-level">Professional working proficiency</p>
-            </div>
-            <div class="language-card">
-                <h3 class="language-name">Hindi</h3>
-                <p class="language-level">Professional working proficiency</p>
-            </div>
-            <div class="language-card">
-                <h3 class="language-name">Marathi</h3>
-                <p class="language-level">Native or bilingual proficiency</p>
-            </div>
-        </div>
+    <!-- LANGUAGES -->
+    <section class="section" id="languages">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">07 — Languages</span>
+          <h2>Spoken <em>in</em></h2>
+        </header>
+        <div class="lang-list" id="languages-list"></div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-content">
-            <p>I'm currently open to new opportunities and collaborations. Whether you have a question or just want to say hi, feel free to reach out!</p>
-            <div class="contact-links">
-                <a href="mailto:sohilsarode5@gmail.com" class="contact-link">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/sohil-sarode" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/SKS59" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    GitHub
-                </a>
-                <a href="https://leetcode.com/sohilsarode" target="_blank" class="contact-link">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
-                    </svg>
-                    LeetCode
-                </a>
-                <a href="tel:+918087263077" class="contact-link">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                    </svg>
-                    Phone
-                </a>
-            </div>
-        </div>
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="contact-big reveal">Let's build something that <em>scales.</em></h2>
+        <a class="mail reveal" href="mailto:sohilsarode5@gmail.com">sohilsarode5@gmail.com</a>
+        <ul class="socials reveal" id="socials"></ul>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Designed & Built by Sohil Sarode</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">© 2024 All rights reserved</p>
-    </footer>
+  </main>
 
-    <script src="js/script.js"></script>
+  <footer class="foot">
+    <div class="wrap foot-inner">
+      <span class="mono">© 2026 Sohil Sarode</span>
+      <span class="mono">Set in Fraunces &amp; Instrument Sans</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
