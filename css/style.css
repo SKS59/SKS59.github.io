@@ -671,3 +671,12 @@ ul { list-style: none; }
   }
   .js .reveal { opacity: 1; transform: none; }
    }
+.portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 22%;
+  filter: grayscale(1) contrast(1.05);
+  transition: filter 0.9s var(--ease), transform 0.9s var(--ease);
+}
