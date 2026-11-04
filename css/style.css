@@ -181,15 +181,15 @@ ul { list-style: none; }
 .cta-primary:hover { background: var(--paper); color: var(--ink); border: none; }
 
 .portrait {
-  grid-column: 8 / 13;
+  grid-column: 7 / 13;
   position: relative;
 }
 
 .portrait img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center top;
+  object-position: 50% 22%;
   filter: grayscale(1) contrast(1.05);
   transition: filter 0.9s var(--ease), transform 0.9s var(--ease);
 }
@@ -203,7 +203,7 @@ ul { list-style: none; }
 .portrait .ph {
   display: none;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   background: var(--ink-2);
   border: 1px solid var(--line);
   align-items: center;
@@ -670,4 +670,4 @@ ul { list-style: none; }
     animation: none !important;
   }
   .js .reveal { opacity: 1; transform: none; }
-}
+   }
