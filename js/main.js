@@ -1,12 +1,16 @@
 /* ==========================================================
    RENDER + MOTION
-   Reads everything from DATA (js/data.js), so you only edit content there.
+   Reads everything from DATA (js/data.js). Edit content there.
+   The first two projects are shown as featured case studies;
+   the rest appear as a compact "earlier work" list.
    ========================================================== */
 
 (function () {
   "use strict";
 
   document.documentElement.classList.add("js");
+
+  const FEATURED_COUNT = 2;
 
   const esc = (s) =>
     String(s).replace(/[&<>"']/g, (c) => ({
@@ -17,7 +21,7 @@
 
   const logo = (slug) =>
     slug
-      ? `<img class="logo" src="https://cdn.simpleicons.org/${slug}" alt="" loading="lazy" onerror="this.remove()">`
+      ? `<img class="logo" src="https://cdn.simpleicons.org/${slug}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`
       : "";
 
   /* ---------- Render ---------- */
@@ -49,6 +53,41 @@
         </article>`).join("");
   }
 
+  function renderProjects() {
+    const featured = DATA.projects.slice(0, FEATURED_COUNT);
+    const minor = DATA.projects.slice(FEATURED_COUNT);
+
+    const featuredHtml = featured
+      .map((p, i) => `
+        <article class="project reveal" style="--d:${i}">
+          <span class="p-num mono">${pad(i + 1)}</span>
+          <div class="p-main">
+            <h3 class="p-title">
+              <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>
+            </h3>
+            <p class="p-period mono">${esc(p.period)}</p>
+          </div>
+          <p class="p-desc">${esc(p.desc)}</p>
+          <p class="p-stack mono">${p.stack.map(esc).join(" / ")}</p>
+        </article>`).join("");
+
+    const minorHtml = minor.length
+      ? `
+        <p class="sub-label mono reveal">Earlier work</p>
+        <div class="mini-list">
+          ${minor.map((p, i) => `
+            <article class="mini reveal" style="--d:${i}">
+              <h4 class="mini-title"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a></h4>
+              <p class="mono mini-period">${esc(p.period)}</p>
+              <p class="mini-desc">${esc(p.desc)}</p>
+              <p class="p-stack mono">${p.stack.map(esc).join(" / ")}</p>
+            </article>`).join("")}
+        </div>`
+      : "";
+
+    document.getElementById("projects-list").innerHTML = featuredHtml + minorHtml;
+  }
+
   function renderSkills() {
     document.getElementById("skills-list").innerHTML = DATA.skills
       .map((g) => `
@@ -61,28 +100,12 @@
         </div>`).join("");
   }
 
-  function renderProjects() {
-    document.getElementById("projects-list").innerHTML = DATA.projects
-      .map((p, i) => `
-        <article class="project reveal" style="--d:${i % 3}">
-          <span class="p-num mono">${pad(i + 1)}</span>
-          <div class="p-main">
-            <h3 class="p-title">
-              <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)} ↗</a>
-            </h3>
-            <p class="p-period mono">${esc(p.period)}</p>
-          </div>
-          <p class="p-desc">${esc(p.desc)}</p>
-          <p class="p-stack mono">${p.stack.map(esc).join(" / ")}</p>
-        </article>`).join("");
-  }
-
   function renderEducation() {
     document.getElementById("education-list").innerHTML = DATA.education
       .map((e, i) => `
         <article class="edu reveal" style="--d:${i}">
           <span class="mono">${esc(e.year)}</span>
-          <div class="edu-score" style="margin-top:1.2rem">${esc(e.score)}</div>
+          <div class="edu-score">${esc(e.score)}</div>
           <span class="mono">${esc(e.scoreLabel)}</span>
           <h3 class="edu-degree">${esc(e.degree)}</h3>
           <p class="edu-school">${esc(e.school)}</p>
@@ -132,7 +155,6 @@
   /* ---------- Motion ---------- */
 
   function setupReveal() {
-    // Stagger delays for elements that carry data-delay (hero).
     document.querySelectorAll("[data-delay]").forEach((el) => {
       el.style.setProperty("--d", el.dataset.delay);
     });
@@ -184,8 +206,8 @@
   function init() {
     renderStats();
     renderExperience();
-    renderSkills();
     renderProjects();
+    renderSkills();
     renderEducation();
     renderCerts();
     renderAwards();
