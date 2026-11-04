@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sohil Sarode · Software Engineer</title>
-  <meta name="description" content="Sohil Sarode, Software Engineer building distributed backend systems and full-stack products.">
-  <link rel="icon" href="assets/profile.png">
+  <meta name="description" content="Sohil Sarode, Software Engineer at Lowe's India. Builds event-driven microservices, Kafka pipelines and full-stack products with Spring Boot and React.">
+  <meta name="author" content="Sohil Sarode">
+
+  <meta property="og:title" content="Sohil Sarode · Software Engineer">
+  <meta property="og:description" content="Event-driven microservices, Kafka pipelines and full-stack products. Spring Boot, React, MongoDB, PostgreSQL.">
+  <meta property="og:image" content="profile2.jpg">
+  <meta property="og:type" content="profile">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +22,6 @@
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="topbar">
-    <a href="#top" class="mark" aria-label="Back to top">SS<span>.</span></a>
     <nav class="nav" aria-label="Primary">
       <a href="#experience">Work</a>
       <a href="#skills">Stack</a>
@@ -32,18 +36,29 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="wrap">
-        <p class="hero-meta mono reveal">Software Engineer, Bengaluru<br>Backend systems · Full-stack products</p>
+        <p class="hero-meta mono reveal">Software Engineer · Bengaluru, India<br>Open to backend and full-stack roles</p>
 
         <h1 class="hero-title reveal" data-delay="1">Sohil<br><em>Sarode</em><span class="dot">.</span></h1>
 
         <div class="hero-body">
-          <p class="lede reveal" data-delay="2">
-            I build high-throughput backend services and the interfaces that sit on top of them.
-            Currently at Lowe's India, building event-driven microservices and Kafka pipelines on Spring Boot, MongoDB and PostgreSQL.
-          </p>
+          <div class="hero-copy">
+            <p class="lede reveal" data-delay="2">
+              I build high-throughput backend services and the interfaces that sit on top of them.
+              Currently at Lowe's India, building event-driven microservices and Kafka pipelines on
+              Spring Boot, MongoDB and PostgreSQL.
+            </p>
+            <div class="hero-cta reveal" data-delay="3">
+              <a class="cta cta-primary" href="Sohil_Sarode_SDE2.pdf" download>Download resume ↓</a>
+              <a class="cta" href="mailto:sohilsarode5@gmail.com">Email me</a>
+              <a class="cta" href="https://github.com/SKS59" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+
           <figure class="portrait reveal" data-delay="3">
-            <img src="assets/profile.png" alt="Portrait of Sohil Sarode" width="1024" height="1024">
-            <figcaption class="mono">Fig. 01 — Sohil, Bengaluru</figcaption>
+            <img src="profile2.jpg" alt="Portrait of Sohil Sarode" width="1024" height="952" decoding="async"
+                 onerror="this.closest('.portrait').classList.add('no-photo')">
+            <div class="ph" aria-hidden="true">Sohil Sarode</div>
+            <figcaption class="mono">Fig. 01 · Sohil, Bengaluru</figcaption>
           </figure>
         </div>
 
@@ -55,21 +70,10 @@
     <section class="section" id="experience">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">01 — Experience</span>
+          <span class="mono">01 · Experience</span>
           <h2>Where I've <em>worked</em></h2>
         </header>
         <div id="experience-list"></div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="wrap">
-        <header class="section-head reveal">
-          <span class="mono">02 — Stack</span>
-          <h2>Tools I reach <em>for</em></h2>
-        </header>
-        <div id="skills-list"></div>
       </div>
     </section>
 
@@ -77,10 +81,21 @@
     <section class="section" id="projects">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">03 — Projects</span>
+          <span class="mono">02 · Projects</span>
           <h2>Things I've <em>built</em></h2>
         </header>
         <div id="projects-list"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <span class="mono">03 · Stack</span>
+          <h2>Tools I reach <em>for</em></h2>
+        </header>
+        <div id="skills-list"></div>
       </div>
     </section>
 
@@ -88,7 +103,7 @@
     <section class="section" id="education">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">04 — Education</span>
+          <span class="mono">04 · Education</span>
           <h2>Academic <em>record</em></h2>
         </header>
         <div class="cards" id="education-list"></div>
@@ -99,7 +114,7 @@
     <section class="section" id="certifications">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">05 — Certifications</span>
+          <span class="mono">05 · Certifications</span>
           <h2>Licenses &amp; <em>credentials</em></h2>
         </header>
         <div class="cert-list" id="certs-list"></div>
@@ -110,7 +125,7 @@
     <section class="section" id="awards">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">06 — Achievements</span>
+          <span class="mono">06 · Achievements</span>
           <h2>Honors &amp; <em>scores</em></h2>
         </header>
         <div class="award-list" id="awards-list"></div>
@@ -121,7 +136,7 @@
     <section class="section" id="languages">
       <div class="wrap">
         <header class="section-head reveal">
-          <span class="mono">07 — Languages</span>
+          <span class="mono">07 · Languages</span>
           <h2>Spoken <em>in</em></h2>
         </header>
         <div class="lang-list" id="languages-list"></div>
@@ -142,7 +157,7 @@
   <footer class="foot">
     <div class="wrap foot-inner">
       <span class="mono">© 2026 Sohil Sarode</span>
-      <span class="mono">Set in Fraunces &amp; Instrument Sans</span>
+      <span class="mono">Built with HTML, CSS &amp; JavaScript · Hosted on GitHub Pages</span>
     </div>
   </footer>
 
