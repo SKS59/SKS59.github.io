@@ -680,3 +680,20 @@ ul { list-style: none; }
   filter: grayscale(1) contrast(1.05);
   transition: filter 0.9s var(--ease), transform 0.9s var(--ease);
 }
+/* ---------- Desktop hero layout ---------- */
+@media (min-width: 961px) {
+  .hero-meta  { grid-column: 1 / 8; grid-row: 1; }
+  .hero-title { grid-column: 1 / 8; grid-row: 2; font-size: clamp(4.4rem, 10vw, 10rem); }
+  .hero-body  { display: contents; }
+  .hero-copy  { grid-column: 1 / 8; grid-row: 3; }
+  .portrait   {
+    grid-column: 9 / 13;
+    grid-row: 1 / 4;
+    align-self: start;
+    justify-self: end;
+    width: 100%;
+    max-width: 440px;
+    margin-top: 0;
+  }
+  .stats      { grid-row: 4; }
+}
